@@ -34,6 +34,7 @@ def convert(time_str):
     parts = time_str.split(":")
     hours = float(parts[0])
     minutes = float(parts[1])
+    # the float() auto ignore tailing space.
 
     if is_pm and hours != 12:
         hours = hours + 12
